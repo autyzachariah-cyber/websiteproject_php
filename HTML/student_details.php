@@ -30,7 +30,7 @@ session_start();
     if ($_SESSION['loggedIn'] and isset($_SESSION['admin'])){
         echo $_SESSION['admin']['email'] . "logged In";
     }
-    else { header('Location: ../php/login.php'); } 
+    else { header('Location: ../HTML/login.php'); } 
     ?>
     
     <div class = "login">

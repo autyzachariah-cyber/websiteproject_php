@@ -26,11 +26,13 @@ session_start();
     </nav>
 
     <?php
-    if ($_SESSION['loggedIn'] && isset($_SESSION['student'])){
+    if (isset($_SESSION['loggedIn'])){
+        if ($_SESSION['loggedIn'] && isset($_SESSION['student'])){
         echo $_SESSION['student']['email'] . " logged In";
-    }
-    if ($_SESSION['loggedIn'] and isset($_SESSION['admin'])){
+        }
+        if ($_SESSION['loggedIn'] and isset($_SESSION['admin'])){
         echo $_SESSION['admin']['email'] . "logged In";
+        }
     }
     ?>
 
