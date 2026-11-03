@@ -1,0 +1,69 @@
+/*css file*/
+
+#logo{
+    width: 10%;
+    height: 10%;
+    position: relative;
+}
+
+.menu-checkbox{
+    display: none;
+}
+
+h1{color: darkblue;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.menu{list-style-type: none; 
+    margin: 0; 
+    padding: 10px;
+    width: 200px;
+    background-color: antiquewhite;
+}
+
+a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color:crimson
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+
+.login {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    float: right;
+    background-color: blue;
+} 
+    
+
+/*change the link and background colour*/
+li a:hover{
+    background-color: cyan;
+    color: blanchedalmond;
+}
+
+table, th, tr,td {
+    border: 1px solid;
+}
+
+/* https://learn.shayhowe.com/html-css/positioning-content/ */
+.menu{
+    float: left;
+}
+
