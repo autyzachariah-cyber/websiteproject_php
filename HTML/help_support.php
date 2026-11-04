@@ -30,7 +30,7 @@ session_start();
     if ($_SESSION['loggedIn'] && isset($_SESSION['student'])){
         echo $_SESSION['student']['email'] . " logged In";
     }
-    if ($_SESSION['loggedIn'] and isset($_SESSION['admin'])){
+    elseif ($_SESSION['loggedIn'] and isset($_SESSION['admin'])) {
         echo $_SESSION['admin']['email'] . "logged In";
     }
     else { header('Location: ../HTML/login.php'); } 
